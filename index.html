@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Design</title>
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: #f4f6f9;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+
+    .btn-custom {
+      border-radius: 20px;
+      padding: 6px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://picsum.photos/300/200?1" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a simple card description.</p>
+          <a href="#" class="btn btn-primary btn-custom">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://picsum.photos/300/200?2" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a simple card description.</p>
+          <a href="#" class="btn btn-success btn-custom">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://picsum.photos/300/200?3" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a simple card description.</p>
+          <a href="#" class="btn btn-danger btn-custom">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
